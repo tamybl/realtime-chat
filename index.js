@@ -1,5 +1,5 @@
 // Setup basic express server
-var express = require('express');
+/*var express = require('express');
 var app = express();
 var path = require('path');
 var server = require('http').createServer(app);
@@ -78,9 +78,9 @@ io.on('connection', function (socket) {
       });
     }
   });
-});
+}); */
 
-/*var app = require('express')();
+var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
@@ -118,6 +118,6 @@ io.on('connection', function(socket){
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
   });
-}); */ 
+}); 
 
 
