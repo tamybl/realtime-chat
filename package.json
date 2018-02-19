@@ -9,8 +9,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,10 +20,12 @@
     "realtime",
     "socket"
   ],
-  "author": "Tamara Bravo, Gabriela Castillo, Ismary Alvarez",
+  "author": "Tamara Bravo, Ismary Alvarez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tamybl/realtime-chat/issues"
   },
   "homepage": "https://github.com/tamybl/realtime-chat#readme"
 }
+
+//"start": "node index.js"
