@@ -1,0 +1,95 @@
+/* Default Socket.io style */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+body { 
+  font: 16px Helvetica, Arial; 
+}
+
+form { 
+  background: #000;
+  padding: 3px; 
+  position: fixed;  
+  bottom: 0; width: 100%; }
+
+form input { 
+  border: 0; 
+  padding: 10px; 
+  width: 80%; 
+  margin-right: .5%; 
+}
+
+form button { 
+  width: 18%; 
+  background: rgb(130, 224, 255); 
+  border: none; 
+  padding: 10px; 
+}
+
+#messages { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+#messages li { 
+  padding: 5px 10px; 
+  margin: 10px;
+}
+
+#messages li:nth-child(odd) { 
+  background: #eee; 
+}
+
+/* Login Page */
+
+#login-page {
+  background-color: #fff;
+  color: #3A3A3A;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.title {
+  font-size: 1.4em;
+}
+
+.logo {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.logo img {
+  width: 100%;
+}
+
+#input-username {
+  padding: 0.5em;
+  margin: 0.6em;
+  border: 1px solid #ec0b91;
+  border-radius: 6px;
+}
+
+#input-username:focus {
+  outline: none;
+}
+
+#btn-new-user {
+ color: #fff;
+ background-color: #871a8a;
+ border: 1px solid #871a8a;
+ padding: 0.5em 1em;
+ border-radius: 6px;
+}
+
+/* Chat */ 
+
+#chat-session {
+  display: none;
+  height: 100vh;
+  background: linear-gradient(#530060, #c90881);
+}

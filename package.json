@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Primera version de chat con socket.io",
   "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^4.0.0-alpha.6",
     "express": "^4.15.2",
     "socket.io": "^2.0.4"
   },
@@ -28,4 +30,3 @@
   },
   "homepage": "https://github.com/tamybl/realtime-chat#readme"
 }
-

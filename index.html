@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Realtime Chat with Socket.IO</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
-  <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
   <script>
   $(function () {
     var socket = io('http://34.227.11.223:3000');
     $('form').submit(function(){
-      socket.emit('chat message', $('#m').val());
-      $('#m').val('');
+      socket.emit('chat message', $('#msg').val());
+      $('#msg').val('');
       return false;
     });
     socket.on('chat message', function(msg){
@@ -20,21 +21,32 @@
     });
   });
   </script>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font: 13px Helvetica, Arial; }
-    form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
-    form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
-    form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
-    #messages { list-style-type: none; margin: 0; padding: 0; }
-    #messages li { padding: 5px 10px; }
-    #messages li:nth-child(odd) { background: #eee; }
-  </style>
 </head>
 <body>
-  <ul id="messages"></ul>
-  <form action="">
-    <input id="m" autocomplete="off" /><button>Send</button>
-  </form>
+  <section id="login-page" class="container-fluid">
+    <div class="row">
+      <div class="col-3 d-inline-flex d-sm-none"></div>
+      <div class="col-6 col-md-4 offset-md-4 logo">
+        <img src="assets/img/logo-chat-pink.png" alt="" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-6 offset-md-3 text-center">
+      <div class="title">¿Cual es tu nombre de usuario?</div>
+      <input type="text" id="input-username" placeholder="Usuario">
+      <div><button id="btn-new-user">INGRESAR</button></div>
+    </div>
+    
+  </section>
+  <section id="chat-session" class="container-fluid">
+
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="msg" autocomplete="off" /><button>Enviar</button>
+    </form>
+  </section>
+  
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
